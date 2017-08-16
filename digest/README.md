@@ -43,8 +43,8 @@ To calculate the checksum:
 // `hash` is a variable, of type hash.Hash
 // write data to `hash`...
 
-var digest []byte
-digest = hash.Sum(digest)
+// type of `digest` is []byte
+digest := hash.Sum(nil)
 ```
 
 Once you have the digest in bytes, encode it into hexadecimal.
